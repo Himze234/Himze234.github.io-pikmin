@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pikmin Bloom 優惠代碼領取入口</title>
   
-  <!-- 預覽圖設定，加這6行就行 -->
+  <!-- 預覽圖設定 -->
   <meta property="og:title" content="Pikmin Bloom 限定福利活動">
   <meta property="og:description" content="限定序號領取，一起種花散步！">
   <meta property="og:image" content="https://himze234.github.io/Himze234.github.io-pikmin/preview.jpg">
@@ -152,6 +152,17 @@
       margin-top: 16px;
       opacity: 0.8;
     }
+
+    /* 頁面載入淡入效果，加在這裡 */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .container { opacity: 0; animation: fadeInUp 0.8s ease-out 0.2s forwards; }
+    .avatar-wrap { opacity: 0; animation: fadeInUp 0.8s ease-out 0.4s forwards; }
+    h1 { opacity: 0; animation: fadeInUp 0.8s ease-out 0.6s forwards; }
+    p, .btn, .badge { opacity: 0; animation: fadeInUp 0.8s ease-out 0.8s forwards; }
+    
   </style>
 </head>
 <body>
